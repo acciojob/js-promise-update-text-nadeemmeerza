@@ -5,7 +5,7 @@ const call = new Promise((res, rej)=>{
     res("Hello, world!");
   }, 1000);
 })
-call().then((res)=>{
+call.then((res)=>{
 	let output = document.getElementById("output");
 	output.innerText = res;
 });
