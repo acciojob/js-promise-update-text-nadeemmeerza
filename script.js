@@ -5,4 +5,6 @@ const call = new Promise((res, rej)=>{
     res("Hello, world!");
   }, 1000);
 })
-output.innerText = call();
+call().then((res)=>{
+	output.innerText = res;
+});
